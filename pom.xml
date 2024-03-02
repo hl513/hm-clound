@@ -8,6 +8,7 @@
     <modules>
         <module>user-service</module>
         <module>order-service</module>
+        <module>eureka-service</module>
     </modules>
     <packaging>pom</packaging>
 

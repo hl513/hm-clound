@@ -1,6 +1,8 @@
 server:
   port: 8082
 spring:
+  application:
+    name: orderservice
   datasource:
     url: jdbc:mysql://192.168.15.140:3306/cloud_order?useSSL=false
     username: root
@@ -12,6 +14,10 @@ mybatis:
     map-underscore-to-camel-case: true
 logging:
   level:
-    cn.itcast: debug
+    com.xxx.hep: debug
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
+eureka:
+  client:
+    service-url:  # eureka的地址信息
+      defaultZone: http://127.0.0.1:10086/eureka
