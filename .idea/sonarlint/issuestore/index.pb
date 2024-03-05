@@ -31,3 +31,11 @@ E
 order-service/pom.xml,d\3\d3bf53ecc442740843266a635cbfe9807b992566
 o
 ?eureka-service/src/main/java/com/xxx/hep/EurekaApplication.java,d\e\de9427a1779dfabad0eda241274b01d3074092c4
+B
+eureka-service.iml,3\3\33a40ed7bb51dab214003d9ee35fb43195e55512
+t
+Duser-service/src/main/java/com/xxx/hep/config/PatternProperties.java,5\b\5bacc8cca7c5f12cf235af66a8adc70942fdc21f
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0

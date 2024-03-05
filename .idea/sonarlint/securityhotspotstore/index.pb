@@ -31,3 +31,11 @@ m
 =order-service/src/main/java/com/xxx/hep/OrderApplication.java,e\e\eead89122f95737c5f7c510f72f531d11992258f
 q
 Aorder-service/src/main/java/com/xxx/hep/service/OrderService.java,d\f\dfe915ce65da2fe8d87b7bc21549cd8c4bd37e3a
+B
+eureka-service.iml,3\3\33a40ed7bb51dab214003d9ee35fb43195e55512
+t
+Duser-service/src/main/java/com/xxx/hep/config/PatternProperties.java,5\b\5bacc8cca7c5f12cf235af66a8adc70942fdc21f
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0

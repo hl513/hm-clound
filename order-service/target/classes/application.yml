@@ -3,6 +3,12 @@ server:
 spring:
   application:
     name: orderservice
+  cloud:
+    nacos:
+      server-addr: 192.168.15.140:8848  # nacos服务器地址
+      discovery:
+        cluster-name: GY # 集群名称
+        namespace: eeff5bad-49a0-48c4-97d6-2ddedde56774
   datasource:
     url: jdbc:mysql://192.168.15.140:3306/cloud_order?useSSL=false
     username: root
@@ -17,16 +23,18 @@ logging:
     com.xxx.hep: debug
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
-eureka:
-  client:
-    service-url:  # eureka的地址信息
-      defaultZone: http://127.0.0.1:10086/eureka
+#eureka:
+#  client:
+#    service-url:  # eureka的地址信息
+#      defaultZone: http://127.0.0.1:10086/eureka
 
 # 调用的服务名称
 userservice:
   rabbion:
-    # 负载均衡规则
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    # eureka负载均衡规则
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    # nacos的负载均衡
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule
 ribbon:
   eager-load:
     enabled: true  # 开启饥饿加载
