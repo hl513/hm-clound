@@ -34,18 +34,20 @@ public class UserController {
      * @return 用户
      */
     @GetMapping("/{id}")
-    public User queryById(@PathVariable("id") Long id) {
+    public User queryById(@PathVariable("id") Long id, @RequestHeader(value = "Truth", required = false) String truth) {
+        log.debug("truch:{}", truth);
         return userService.queryById(id);
     }
 
 
     @GetMapping("now")
-    public String now(){
+    public String now() {
 //        return LocalDateTime.now().format(DateTimeFormatter.ofPattern(dateformat));
         return LocalDateTime.now().format(DateTimeFormatter.ofPattern(patternProperties.getDateformat()));
     }
+
     @GetMapping("prop")
-    public PatternProperties properties(){
+    public PatternProperties properties() {
         return patternProperties;
     }
 

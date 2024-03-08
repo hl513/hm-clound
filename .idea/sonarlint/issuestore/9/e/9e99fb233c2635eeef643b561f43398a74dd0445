@@ -1,11 +1,7 @@
 
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‰âÀõà1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8æ¶Úñá1
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‹âÀõà1
-X	java:S125"<This block of commented-out lines of code should be removed.(÷¼ßÅ8È³Çõà1
-W	java:S125,"<This block of commented-out lines of code should be removed.(ßÕˆ8‘âÀõà1
-l
-java:S1128"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›8Î³Çõà1
-
-java:S1128	"]Remove this unused import 'org.springframework.cloud.context.config.annotation.RefreshScope'.(­¾î²ûÿÿÿÿ8Î³Çõà1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8æ¶Úñá1
+X	java:S125"<This block of commented-out lines of code should be removed.(÷¼ßÅ8ï¶Úñá1
+W	java:S125-"<This block of commented-out lines of code should be removed.(ßÕˆ8ñ¶Úñá1
