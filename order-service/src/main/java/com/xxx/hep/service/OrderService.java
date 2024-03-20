@@ -1,5 +1,6 @@
 package com.xxx.hep.service;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.xxx.hep.client.UserClient;
 import com.xxx.hep.mapper.OrderMapper;
 import com.xxx.hep.pojo.Order;
@@ -58,6 +59,7 @@ public class OrderService {
      * @param orderId
      * @return
      */
+    @SentinelResource("hot")
     public Order queryOrderById(Long orderId) {
         // 1.查询订单
         Order order = orderMapper.findById(orderId);
@@ -68,4 +70,14 @@ public class OrderService {
         // 4.返回
         return order;
     }
+
+    /**
+     * 流控模式-链路
+     * 资源标记
+     */
+    @SentinelResource("goods")
+    public void queryGoods(){
+        System.err.println("查询商品");
+    }
+
 }

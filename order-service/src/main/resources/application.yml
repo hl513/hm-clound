@@ -9,8 +9,20 @@ spring:
 #      discovery:
 #        cluster-name: GY # 集群名称
 #        namespace: eeff5bad-49a0-48c4-97d6-2ddedde56774
+    sentinel:
+      transport:
+        dashboard: localhost:8090
+      # 关闭context整合
+      web-context-unify: false
+      datasource:
+        flow:
+          nacos:
+            server-addr: 192.168.15.140:8848 # nacos地址
+            dataId: orderservice-flow-rules
+            groupId: SENTINEL_GROUP
+            rule-type: flow # 还可以是：degrade、authority、param-flow
   datasource:
-    url: jdbc:mysql://192.168.15.140:3306/cloud_order?useSSL=false
+    url: jdbc:mysql://192.168.15.140:3306/cloud_order?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=true
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -52,3 +64,5 @@ feign:
     enabled: true # 开启feign对HttpClient的支持
     max-connections: 200 # 最大的连接数
     max-connections-per-route: 50 # 每个路径的最大连接数
+  sentinel:
+    enabled: true # 开启feign对sentinel的支持
