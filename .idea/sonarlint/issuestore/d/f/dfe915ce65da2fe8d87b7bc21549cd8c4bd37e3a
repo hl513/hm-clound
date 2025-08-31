@@ -1,10 +1,4 @@
 
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¡“»Ôå1
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¡“»Ôå1
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¡“»Ôå1
-]	java:S125"<This block of commented-out lines of code should be removed.(ÛŞûÿÿÿÿ8¦“»Ôå1
-]	java:S125+"<This block of commented-out lines of code should be removed.(ÛŞûÿÿÿÿ8§“»Ôå1
-G	java:S106P"+Replace this use of System.err by a logger.(ÚŠ¸×8ª“»Ôå1
+]	java:S125"<This block of commented-out lines of code should be removed.(ÛŞûÿÿÿÿ8Êêšç1
+]	java:S125+"<This block of commented-out lines of code should be removed.(ÛŞûÿÿÿÿ8Ôêšç1
+G	java:S106P"+Replace this use of System.err by a logger.(ÚŠ¸×8Úêšç1

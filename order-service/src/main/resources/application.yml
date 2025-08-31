@@ -5,7 +5,7 @@ spring:
     name: orderservice
   cloud:
     nacos:
-      server-addr: 192.168.15.140:8848  # nacos服务器地址
+      server-addr: 117.72.210.200:8848  # nacos服务器地址
 #      discovery:
 #        cluster-name: GY # 集群名称
 #        namespace: eeff5bad-49a0-48c4-97d6-2ddedde56774
@@ -17,14 +17,14 @@ spring:
       datasource:
         flow:
           nacos:
-            server-addr: 192.168.15.140:8848 # nacos地址
+            server-addr: 117.72.210.200:8848 # nacos地址
             dataId: orderservice-flow-rules
             groupId: SENTINEL_GROUP
             rule-type: flow # 还可以是：degrade、authority、param-flow
   datasource:
-    url: jdbc:mysql://192.168.15.140:3306/cloud_order?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=true
+    url: jdbc:mysql://117.72.210.200:3306/cloud_order?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=true
     username: root
-    password: 123456
+    password: Demo12345!
     driver-class-name: com.mysql.cj.jdbc.Driver
 mybatis:
   type-aliases-package: com.xxx.hep.pojo
